@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>کافه ماهلین</title>
+  <meta name="description" content="کافه ماهلین — قهوه‌ی خوب، دسرهای دست‌ساز و فضای دلنشین.">
+  <meta property="og:title" content="کافه ماهلین">
+  <meta property="og:description" content="قهوه‌های ویژه، کیک‌های خانگی و فضای دوستانه در کافه ماهلین.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#fff8f2;
+      --card:#ffffff;
+      --accent:#c66f33;
+      --muted:#6b6b6b;
+      --glass: rgba(255,255,255,0.7);
+      font-family: 'Vazirmatn', Tahoma, sans-serif;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,var(--bg),#fff);color:#222}
+    header{background:url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder') center/cover no-repeat;min-height:64vh;display:flex;align-items:center}
+    .overlay{background:linear-gradient(180deg, rgba(0,0,0,0.25), rgba(0,0,0,0.1));width:100%;padding:48px}
+    .container{max-width:1100px;margin:0 auto;padding:0 18px}
+    nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:12px;background:var(--glass);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent);font-size:20px;box-shadow:0 6px 18px rgba(0,0,0,0.12)}
+    .brand h1{margin:0;font-size:20px;color:white}
+    .nav-links a{color:#fff;text-decoration:none;margin-left:16px;font-weight:600}
+
+    .hero{display:flex;gap:28px;align-items:center}
+    .hero-text{flex:1;color:#fff}
+    .hero-text h2{font-size:40px;margin:0 0 8px}
+    .hero-text p{margin:0 0 18px;opacity:0.95}
+    .cta{display:inline-block;background:var(--accent);color:#fff;padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:700}
+
+    main{padding:48px 0}
+    .grid{display:grid;grid-template-columns:1fr 360px;gap:28px}
+
+    .card{background:var(--card);border-radius:16px;padding:20px;box-shadow:0 6px 20px rgba(16,16,16,0.06)}
+    h3{margin-top:0}
+
+    .menu-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .menu-item{display:flex;justify-content:space-between;padding:10px 8px;border-radius:10px;background:linear-gradient(180deg,#fff,#fff);border:1px solid #f0e7e1}
+    .price{font-weight:700;color:var(--accent)}
+
+    .gallery{display:flex;gap:8px;flex-wrap:wrap}
+    .gallery img{width:calc(50% - 4px);border-radius:10px;display:block}
+
+    aside .open-hours{font-size:14px;color:var(--muted)}
+    .reserve-btn{display:block;text-align:center;margin-top:12px;padding:10px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700}
+
+    footer{Padding:28px 0;text-align:center;color:var(--muted)}
+
+    /* responsive */
+    @media (max-width:900px){
+      .grid{grid-template-columns:1fr}
+      .menu-list{grid-template-columns:1fr}
+      .hero{flex-direction:column;align-items:flex-start}
+      .hero-text h2{font-size:28px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="overlay">
+      <div class="container">
+        <nav>
+          <div class="brand">
+            <div class="logo">م</div>
+            <div>
+              <h1>کافه ماهلین</h1>
+              <div style="font-size:12px;color:rgba(255,255,255,0.9)">قهوهٔ تخصصی — دسرهای خانگی — فضای دوستانه</div>
+            </div>
+          </div>
+          <div class="nav-links">
+            <a href="#menu">منو</a>
+            <a href="#about">درباره</a>
+            <a href="#contact">تماس</a>
+          </div>
+        </nav>
+
+        <section class="hero">
+          <div class="hero-text">
+            <h2>به کافه ماهلین خوش آمدید</h2>
+            <p>قهوه‌های تک خاستگاه، لیکورها و دسرهای دست‌ساز. جایی برای کار، دیدار و آرامش.</p>
+            <a class="cta" href="#reserve">رزرو میز</a>
+          </div>
+          <div style="width:320px;">
+            <div class="card" style="backdrop-filter:blur(6px);">
+              <h3>انتخاب محبوب</h3>
+              <p style="margin:8px 0 16px;color:rgba(255,255,255,0.95)">آیس لاته با شکر قهوه‌ای و ترافل خانگی</p>
+              <div style="display:flex;gap:8px">
+                <a class="reserve-btn" href="#reserve">رزرو الان</a>
+                <a class="reserve-btn" href="#menu" style="background:#fff;color:var(--accent);border:2px solid rgba(255,255,255,0.16)">دیدن منو</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="grid">
+      <section>
+        <div id="menu" class="card">
+          <h3>منوی منتخب</h3>
+          <div class="menu-list">
+            <div class="menu-item"><span>لاته وانیلی</span><span class="price">۶۵,۰۰۰ ₮</span></div>
+            <div class="menu-item"><span>آمریکانو</span><span class="price">۵۰,۰۰۰ ₮</span></div>
+            <div class="menu-item"><span>آیس لاته</span><span class="price">۷۰,۰۰۰ ₮</span></div>
+            <div class="menu-item"><span>موکا شکلاتی</span><span class="price">۷۵,۰۰۰ ₮</span></div>
+            <div class="menu-item"><span>کاپ‌کیک خانگی</span><span class="price">۵۵,۰۰۰ ₮</span></div>
+            <div class="menu-item"><span>چیزکیک</span><span class="price">۸۵,۰۰۰ ₮</span></div>
+          </div>
+
+          <h3 style="margin-top:18px">منوی صبحانه</h3>
+          <p class="muted">به‌صورت روزانه سرو می‌شود — سفارش مخصوص لطفاً قبل از آمدن رزرو کنید.</p>
+        </div>
+
+        <div class="card" id="about" style="margin-top:18px">
+          <h3>دربارهٔ ما</h3>
+          <p>کافه ماهلین مکانی با تمرکز بر قهوهٔ تازه و مواد اولیه‌ی محلی است. تیم ما هر روز صبح دانه‌ها را تازه آسیاب می‌کند و دسرها را به‌صورت دستی می‌پزد.</p>
+          <div style="margin-top:12px;display:flex;gap:8px;align-items:center">
+            <strong>آدرس:</strong>
+            <span>خیابان نمونه، پلاک ۱۲ — تهران</span>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <h3>گالری</h3>
+          <div class="gallery">
+            <img alt="عکس کافه" src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder">
+            <img alt="قهوه" src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder">
+            <img alt="دسر" src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder">
+            <img alt="فضای داخلی" src="https://images.unsplash.com/photo-1494232410401-ad00d5433cfa?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder">
+          </div>
+        </div>
+      </section>
+
+      <aside>
+        <div class="card">
+          <h3>ساعات کاری</h3>
+          <div class="open-hours">
+            دوشنبه — جمعه: ۸:۰۰ — ۲۲:۰۰<br>
+            شنبه — یک‌شنبه: ۹:۰۰ — ۲۳:۰۰
+          </div>
+          <a class="reserve-btn" href="#reserve">رزرو میز</a>
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <h3 id="contact">تماس</h3>
+          <p>۰۲۱-۱۲۳۴۵۶۷ — info@mahleen-cafe.example</p>
+          <p style="font-size:13px;color:var(--muted)">ما در اینستاگرام: @mahleen_cafe</p>
+
+          <h4 style="margin-top:12px">موقعیت</h4>
+          <div style="border-radius:10px;overflow:hidden;margin-top:8px">
+            <!-- placeholder map (برای انتشار واقعی، iframe گوگل‌مپ را قرار دهید) -->
+            <img alt="نقشه" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" style="width:100%;display:block">
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:18px" id="reserve">
+          <h3>رزرو آنلاین</h3>
+          <form id="reserveForm">
+            <label>نام و نام خانوادگی<input required name="name" placeholder="مثلاً: مریم احمدی" style="width:100%;padding:8px;margin-top:6px;border-radius:8px;border:1px solid #eee"></label>
+            <label style="display:block;margin-top:8px">تاریخ و ساعت<input required type="datetime-local" name="datetime" style="width:100%;padding:8px;margin-top:6px;border-radius:8px;border:1px solid #eee"></label>
+            <label style="display:block;margin-top:8px">تعداد نفر<input required type="number" min="1" value="2" name="guests" style="width:100%;padding:8px;margin-top:6px;border-radius:8px;border:1px solid #eee"></label>
+            <button type="submit" style="margin-top:12px;width:100%;padding:10px;border-radius:10px;border:0;background:var(--accent);color:#fff;font-weight:700">ارسال رزرو</button>
+            <div id="reserveMsg" style="margin-top:10px;color:var(--muted);font-size:13px"></div>
+          </form>
+        </div>
+
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex;justify-content:center;gap:12px;align-items:center">
+        <div>© ۲۰۲۵ کافه ماهلین</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // رزرو: فقط نمایش پیام تأیید (برای راه‌اندازی واقعی به سرور نیاز است)
+    document.getElementById('reserveForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const name = this.name.value.trim();
+      const dt = this.datetime.value;
+      const guests = this.guests.value;
+      if(!name || !dt || !guests){
+        document.getElementById('reserveMsg').textContent = 'لطفاً همهٔ فیلدها را کامل کنید.';
+        return;
+      }
+      document.getElementById('reserveMsg').textContent = 'درخواست شما ثبت شد — به زودی تماس می‌گیریم.';
+      this.reset();
+    });
+  </script>
+</body>
+</html>
