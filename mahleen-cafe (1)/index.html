@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>کافه ماهلین | Mahleen Café</title>
+  <meta name="description" content="کافه ماهلین — قهوه‌ی خوب، دسرهای دست‌ساز و فضای دلنشین.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#fff8f2;--card:#fff;--accent:#c66f33;--muted:#6b6b6b;--footer-bg:#2b1f1a;--footer-text:#f6efe9;font-family:'Vazirmatn',Tahoma, sans-serif}
+    *{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,var(--bg),#fff);color:#222}
+    header{background:url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder') center/cover no-repeat;min-height:56vh;display:flex;align-items:center}
+    .overlay{background:linear-gradient(180deg, rgba(0,0,0,0.28), rgba(0,0,0,0.08));width:100%;padding:28px}
+    .container{max-width:1100px;margin:0 auto;padding:0 18px}
+    nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:12px;background:rgba(255,255,255,0.75);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent);font-size:20px;box-shadow:0 6px 18px rgba(0,0,0,0.12)}
+    .brand h1{margin:0;font-size:20px;color:white}
+    .nav-links a{color:#fff;text-decoration:none;margin-left:12px;font-weight:600}
+    .hero{display:flex;gap:20px;align-items:center}
+    .hero-text{flex:1;color:#fff}
+    .hero-text h2{font-size:34px;margin:0 0 6px}
+    .cta{display:inline-block;background:var(--accent);color:#fff;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:700}
+    main{padding:28px 0}
+    .grid{display:grid;grid-template-columns:1fr 340px;gap:24px}
+    .card{background:var(--card);border-radius:12px;padding:18px;box-shadow:0 6px 20px rgba(16,16,16,0.06)}
+    h3{margin-top:0}
+    .menu-list{display:grid;grid-template-columns:repeat(1,1fr);gap:8px}
+    .menu-item{padding:8px 6px;border-radius:8px;background:#fff;border:1px solid #f0e7e1}
+    .gallery img{width:100%;border-radius:8px;display:block}
+    .reserve-btn{display:block;text-align:center;margin-top:12px;padding:10px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700}
+    footer.site-footer{background:var(--footer-bg);color:var(--footer-text);padding:28px 0;margin-top:28px;border-top-left-radius:12px;border-top-right-radius:12px}
+    .footer-inner{max-width:1100px;margin:0 auto;padding:0 18px;display:flex;flex-direction:column;gap:6px;align-items:center}
+    .footer-contact a{color:var(--footer-text);text-decoration:none;font-weight:700}
+    @media (max-width:900px){.grid{grid-template-columns:1fr}.hero{flex-direction:column;align-items:flex-start}.hero-text h2{font-size:26px} .footer-inner{align-items:flex-start}}
+    .top-contact{background:rgba(255,255,255,0.85);padding:8px 12px;border-radius:999px;font-weight:700}
+    .menu-image{max-width:100%;border-radius:10px;display:block;margin-bottom:10px}
+    .scroll-btn{background:transparent;border:2px solid rgba(255,255,255,0.18);color:#fff;padding:8px 12px;border-radius:8px;text-decoration:none}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="overlay">
+      <div class="container">
+        <nav>
+          <div class="brand">
+            <div class="logo">م</div>
+            <div>
+              <h1>کافه ماهلین | Mahleen Café</h1>
+              <div style="font-size:12px;color:rgba(255,255,255,0.9)">قهوهٔ تخصصی — دسرهای دست‌ساز — فضای دوستانه</div>
+            </div>
+          </div>
+          <div style="display:flex;gap:10px;align-items:center">
+            <a class="top-contact" href="#contact">📞 تماس با ما</a>
+            <div class="nav-links"><a href="#menu">منو</a><a href="#about">درباره</a><a href="#contact">تماس</a></div>
+          </div>
+        </nav>
+
+        <section class="hero">
+          <div class="hero-text">
+            <h2>به کافه ماهلین خوش آمدید</h2>
+            <p>قهوه‌های تک‌خاستگاه، دسرهای دست‌ساز و فضایی گرم برای دیدار و کار.</p>
+            <a class="cta" href="#reserve">رزرو میز</a>
+          </div>
+          <div style="width:300px;">
+            <div class="card" style="backdrop-filter:blur(6px);">
+              <h3>انتخاب ویژه</h3>
+              <p style="margin:8px 0 12px;color:rgba(0,0,0,0.7)">آیس لاته با شکر قهوه‌ای و ترافل خانگی</p>
+              <div style="display:flex;gap:8px">
+                <a class="reserve-btn" href="#reserve">رزرو الان</a>
+                <a class="reserve-btn" href="#menu" style="background:#fff;color:var(--accent);border:2px solid rgba(0,0,0,0.06)">دیدن منو</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="grid">
+      <section>
+        <div id="menu" class="card">
+          <h3>منوی کافه</h3>
+          <img class="menu-image" alt="منو کافه" src="menu.jpg">
+          <div class="menu-list">
+            <div class="menu-item"><strong>قهوه‌ها:</strong> قهوه ترک، قهوه دوبل، آفاقاتو، آمریکانو، لاته موکا، کارامل ماکیاتو، هانی اسپرسو، ماکیاتو، لیمو رمانو</div>
+            <div class="menu-item"><strong>شیک‌ها:</strong> شیک لوتوس، شیک نوتلا، شیک تیرامیسو، شیک موز طلایی، شیک توتِل، شیک اسپرسو، شیک موز شکلات، شیک اورئو، دالگونا‌ی موز، دالگونا‌ی پسته‌ای، آفاقاتو شیک، کاپوچینو شیک، کوک اسپرسو</div>
+            <div class="menu-item"><strong>نوشیدنی‌های سرد:</strong> نوشیدنی شیر کارامل، توت فرنگی، پرشین کافی، موهیتو، بلوهاوایی، ماکتل اسکای، آکوا مارین</div>
+            <div class="menu-item"><strong>قلیون‌ها:</strong> دوسیب، لَو، آدامس نعناع، آدامس دارچین، آلو یخ، انار، سیب یخ</div>
+          </div>
+        </div>
+
+        <div class="card" id="about" style="margin-top:18px">
+          <h3>درباره ما</h3>
+          <p>کافه ماهلین مکانی با تمرکز بر قهوهٔ تازه و مواد اولیه‌ی محلی است. تیم ما هر روز صبح دانه‌ها را تازه آسیاب می‌کند و دسرها را به‌صورت دستی می‌پزد.</p>
+          <div style="margin-top:12px;display:flex;gap:8px;align-items:center">
+            <strong>آدرس:</strong><span>یاسوج، بلوار ارم، زیرگذر روگذر، جنب افق کوروش، خیابان ثبت اسناد</span>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <h3>گالری</h3>
+          <div class="gallery">
+            <img alt="عکس کافه" src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder">
+            <img alt="قهوه" src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder">
+          </div>
+        </div>
+      </section>
+
+      <aside>
+        <div class="card">
+          <h3>ساعات کاری</h3>
+          <div class="open-hours">دوشنبه — جمعه: ۸:۰۰ — ۲۲:۰۰<br>شنبه — یک‌شنبه: ۹:۰۰ — ۲۳:۰۰</div>
+          <a class="reserve-btn" href="#reserve">رزرو میز</a>
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <h3 id="contact">تماس</h3>
+          <p>۰۹۱۷۲۷۸۰۰۴۲</p>
+          <p style="font-size:13px;color:var(--muted)">اینستاگرام: @mahleen_cafe</p>
+        </div>
+
+        <div class="card" style="margin-top:18px" id="reserve">
+          <h3>رزرو آنلاین</h3>
+          <form id="reserveForm" action="https://formspree.io/f/xrbonqpa" method="POST">
+            <label>نام و نام خانوادگی
+              <input name="name" required placeholder="مثلاً: مریم احمدی" style="width:100%;padding:8px;margin-top:6px;border-radius:8px;border:1px solid #eee">
+            </label>
+            <label style="display:block;margin-top:8px">تاریخ و ساعت
+              <input required type="datetime-local" name="datetime" style="width:100%;padding:8px;margin-top:6px;border-radius:8px;border:1px solid #eee">
+            </label>
+            <label style="display:block;margin-top:8px">تعداد نفر
+              <input required type="number" min="1" value="2" name="guests" style="width:100%;padding:8px;margin-top:6px;border-radius:8px;border:1px solid #eee">
+            </label>
+            <label style="display:block;margin-top:8px">شماره تماس
+              <input name="phone" placeholder="0912..." style="width:100%;padding:8px;margin-top:6px;border-radius:8px;border:1px solid #eee">
+            </label>
+            <button type="submit" style="margin-top:12px;width:100%;padding:10px;border-radius:10px;border:0;background:var(--accent);color:#fff;font-weight:700">ارسال رزرو</button>
+          </form>
+          <div style="margin-top:8px;font-size:13px;color:var(--muted)">بعد از ارسال، اطلاعات رزرو به ایمیل شما ارسال می‌شود.</div>
+        </div>
+
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-address">📍 یاسوج، بلوار ارم، زیرگذر روگذر، جنب افق کوروش، خیابان ثبت اسناد</div>
+      <div class="footer-contact">📞 <a href="tel:09172780042">تماس سریع — 09172780042</a></div>
+      <div class="footer-hours">🕓 ساعات کاری: همه‌روزه از ۸ صبح تا ۱۲ شب</div>
+      <div style="font-size:13px;color:#d6cfc9;margin-top:8px">© ۲۰۲۵ کافه ماهلین — همهٔ حقوق محفوظ است</div>
+    </div>
+  </footer>
+
+</body>
+</html>
